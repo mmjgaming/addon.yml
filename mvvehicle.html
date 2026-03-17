@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Downloading MTVehicles.jar...</title>
+</head>
+<body>
+  <script>
+    // URL of your JAR file
+    const fileUrl = "https://mmjgaming.github.io/MyServer/MTVehicles.jar";
+    const fileName = "MTVehicles.jar";
 
+    // Create a hidden link
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+
+    // Trigger the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  </script>
+
+  <p>If the download doesn’t start, 
+     <a href="https://mmjgaming.github.io/MyServer/MTVehicles.jar" download="MTVehicles.jar">click here</a>.
+  </p>
+</body>
+</html>
